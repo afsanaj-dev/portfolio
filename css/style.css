@@ -1,0 +1,459 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul.ol{
+  list-style: none;
+}
+a{
+ text-decoration: none; 
+}
+
+h1,h2,h3,h4,h5,h6,p{
+  line-height: 0.8px;
+}
+
+.common__header{
+  text-align: center;
+}
+.common__head__top{
+  padding: 15px 0;
+  font-size: 25px;
+  line-height: 16px;
+  letter-spacing: 4px;
+  font-weight: 400;
+  font-family: 'Euphoria Script', cursive;
+  color: #f4ec55;
+  text-transform: capitalize;
+}
+.common__head__bot{
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 700;
+  font-family: 'Abril Fatface', cursive;
+  color: #f1f1f1;
+  text-transform: capitalize;
+}
+/* =============NAVBAR STARTS HERE==================== */
+
+.navbar{
+  background-color: #22276c !important;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 14%;
+  background-color: #f1f1f1;
+  height: 100%; /* Full height */
+  position: fixed; /* Make it stick, even on scroll */
+  overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
+.navbar-nav{
+  margin-top: 20px;
+}
+.nav-item{
+  border-top: 1px solid #55588d;
+  border-width: 100%;
+  font-weight: 400;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 16px;
+  padding: 10px 0;
+}
+.nav-item a{
+  color: #f1f1f1 !important;
+}
+.nav-item a:hover{
+  color: #f4ec55 !important;
+}
+ /* ==============NAVBAR EndS HERE==================== */
+/* =============BANNER STARTS HERE==================== */
+#banner{
+  background: linear-gradient(rgba(34, 39, 108, 0.635),rgba(34, 39, 108, 0.635)), url(../images/pexels-anni-roenkae-3418396.jpg) no-repeat center/cover;
+  margin-left: 14%;
+  padding: 80px 0;
+}
+.banner__left{
+  margin-left: 25px;
+}
+.banner__head{
+  padding-top: 100px;
+  font-family: 'PT Serif', serif;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 40px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.banner__right{
+  margin-left: 100px;
+}
+.banner__img{
+  width: 350px;
+  height: 350px;
+}
+.banner__img img{
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+}
+.title__wrap{
+  position: relative;
+  height: 100px; /* Adjust height as needed */
+  width: 700px; /* Adjust width as needed */
+  overflow: hidden;
+  perspective: 800px;
+}
+.creative{
+  position: absolute;
+  width: 25%;
+  left: 0px;
+  top: 45px;
+  text-align: center;
+  font-family: 'PT Serif', serif;
+  font-size: 32px;
+  color: #f1f1f1;
+}
+.text {
+  position: absolute;
+  bottom: -100px; /* Hide the text initially */
+  width: 70%;
+  text-align: center;
+  font-family: 'Euphoria Script', cursive;
+  font-size: 40px; /* Adjust font size as needed */
+  color: #f4ec55;
+  transform-origin: bottom;
+  transition: transform 0.5s;
+}
+
+.text.show {
+  bottom: 0;
+  transform: rotateX(0deg);
+}
+
+.text.hide {
+  transform: rotateX(180deg);
+}
+
+.text.show:last-child {
+  transition-delay: 0.3s; /* Delay the appearance of the last text for a smooth loop */
+}
+
+.text.show:last-child.hide {
+  transition-delay: 0s; /* Reset the transition delay for a seamless loop */
+}
+
+.social__wrap{
+  margin: 35px 0 0 125px;
+  display: flex;
+  gap: 20px;
+}
+.social__link{
+  font-size: 20px;
+  color: #f4ec55;
+}
+ /* ==============BANNER EndS HERE==================== */
+/* =============About Me STARTS HERE==================== */
+#about{
+  background: linear-gradient(rgba(3, 8, 80, 0.938),#5d3a6e);
+  padding: 80px 0;
+  margin-left: 14%;
+}
+.about__right{
+  margin: 150px 20px 0 30px;
+}
+.about__head{
+  font-size: 20px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: 'PT Serif', serif;
+  color: #b0aff5;
+  text-transform: capitalize;
+  padding-bottom: 30px;
+}
+.about__p{
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+  font-family: 'PT Serif', serif;
+  color: #9b9af1;
+}
+.tab-item{
+  padding: 0 20px;
+}
+button.nav-link{
+  padding: 10px 30px !important;
+  color: #f1f1f1 !important;
+  font-size: 20px;
+}
+.tab-link.active{
+  background-color: #be24a9 !important;
+}
+.about__table{
+  display: flex;
+  column-gap: 60px;
+}
+.table__title{
+  font-size: 18px;
+  font-family: 'PT Serif', serif;
+  color: #f1f1f1;
+}
+.table__p{
+  font-size: 16px;
+  font-family: 'PT Serif', serif; 
+  color: #b0aff5;
+  text-align: end;
+}
+.job__head{
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'PT Serif', serif;
+  color: #f1f1f1;
+}
+.job__place{
+  margin: 30px 0;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'PT Serif', serif;
+  color: #b0aff5;
+}
+.job__year{
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'PT Serif', serif;
+  color: #f1f1f1;
+  padding: 10px;
+  background-color: #be24a9;
+  border-radius: 10px;
+}
+.job__p{
+  margin: 20px 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  font-family: 'PT Serif', serif;
+  color: #f1f1f1;
+}
+.education__item__wrap{
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.education__item{
+  border: 1px solid #be24a9;
+  width: 500px;
+  padding: 0 20px;
+}
+.progress__wrap{
+  margin-top: 40px;
+  display: flex;
+  gap: 40px;
+}
+.progress-bar {
+  position: relative;
+  width: 200px;
+  height: 250px;
+  background-color: transparent;
+}
+.progress__h{
+  font-size: 20px;
+  color: #ffffff;
+  
+}
+
+#progress-
+.progress-circle {
+  width: 100%;
+  height: 100%;
+}
+
+.progress {
+  fill: transparent;
+  stroke: #3e58da;
+  stroke-width: 10;
+  stroke-dasharray: 283;
+  stroke-dashoffset: 283;
+  transform: rotate(-90deg);
+  transform-origin: center;
+  transition: stroke-dashoffset 0.8s ease-in-out;
+}
+
+.progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+
+ /* ==============About Me EndS HERE==================== */
+/* =============SERVICE STARTS HERE==================== */
+#service{
+  background: linear-gradient(rgba(3, 8, 80, 0.938),#5d3a6e);
+  padding: 80px 0;
+  margin-left: 14%;
+} 
+.service__item{
+  width: 280px;
+  padding: 20px;
+  margin: 20px; 
+}
+.service__item:hover{
+  background:linear-gradient( #be24a9,#5d3a6e);
+}
+.service__icon{
+  font-size: 40px;
+  color: #f4ec55;
+}
+.service__title{
+  text-transform: capitalize;
+  margin: 30px 0;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'PT Serif', serif;
+  color: #f1f1f1;
+}
+.service__p{
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+  font-family: 'PT Serif', serif;
+  color: #c4c4c4;
+  
+}
+/* ==============SERVICE EndS HERE==================== */
+/* =============Portfolio STARTS HERE==================== */
+#portfolio{
+  background: linear-gradient(rgba(3, 8, 80, 0.938),#5d3a6e);
+  padding: 80px 0;
+  margin-left: 14%;
+} 
+.portfolio__menu{
+  margin: 30px 10px 30px 50px;
+  display: flex;
+  gap: 30px;
+
+}
+
+.portfolio__btn{
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
+  border-style: none;
+  background:linear-gradient(#7333c1,#777770);
+  padding: 5px;
+  border-radius: 5px;
+}
+.portfolio__item__wrap{
+  margin-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  transition: all linear 0.3s;
+}
+.portfolio__item{
+  width: 340px;
+  background: linear-gradient(#7333c1,#251632);
+  text-align: center;
+  padding: 20px 8px 10px 8px;
+  border-radius: 5px;
+}
+.portfolio__item__img{
+  width: 310px;
+  height: 270px;
+  object-fit: cover;   
+  text-align: center;
+  object-position:50% 50%;
+}
+
+.portfolio__item__img img{
+  max-width: 100%;
+  max-height: 100%; 
+}
+.portfolio__item__head{
+  margin-top: 10px;
+  font-family: 'PT Serif', serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #e3e2e2;
+}
+.portfolio__link{
+  font-size: 16px;
+  font-family: 'PT Serif', serif; 
+ font-weight: 400;
+ color: #f4ec55;
+
+}
+ /* ==============Portfolio EndS HERE==================== */
+/* =============Contact STARTS HERE==================== */
+#contact{
+  background: linear-gradient(rgba(3, 8, 80, 0.938),#5d3a6e);
+  padding: 80px 0;
+  margin-left: 14%;
+} 
+.connect{
+  margin: 50px 0 0 50px;
+}
+.connect__head{
+  font-family: 'PT Serif', serif;
+  font-weight: 400;
+  font-size: 26px;
+  color: #b0aff5;
+}
+.connect__p,.connect__p1{
+  margin: 40px 0;
+  font-family: 'PT Serif', serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #ffffff;
+}
+.connect__p1{
+  margin: 0 0 10px 0;
+}
+.nam,.email{
+  width: 300px;
+  height: 40px;
+  padding: 10px;
+}
+.comment{
+  width: 300px;
+  height: 80px;
+  padding: 10px;
+}
+.nam_err,.email_err,.pass_err{
+  color: red;
+}
+
+.connect__form{
+  width: 300px;
+  margin: 50px 0 0 50px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.connect__form button{
+  margin-top: 30px;
+  padding: 5px;
+  border-radius: 5px;
+  background:linear-gradient(#3e58da,#6f5eec);;
+}
+ /* ==============Contact EndS HERE==================== */
+/* =============NAVBAR STARTS HERE==================== */
+ /* ==============NAVBAR EndS HERE==================== */
+
+
+/* font-family: 'Abril Fatface', cursive;
+font-family: 'Euphoria Script', cursive;
+font-family: 'Fira Sans', sans-serif;
+font-family: 'PT Serif', serif; 
+#807eef */
