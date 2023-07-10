@@ -307,8 +307,14 @@ button.nav-link{
   padding: 80px 0;
   margin-left: 13%;
 } 
+.service__wrap{
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
 .service__item{
-  width: 320px;
+  width: 360px;
   padding: 30px;
 }
 .service__item:hover{
@@ -342,7 +348,7 @@ button.nav-link{
   margin-left: 13%;
 } 
 .portfolio__menu{
-  margin: 30px 10px 30px 50px;
+  margin: 30px 5px;
   display: flex;
   gap: 30px;
 
@@ -357,26 +363,26 @@ button.nav-link{
   color: #e3e2e2;
   border-style: none;
   background:#7042a9;
-  padding: 5px;
+  padding: 5px 10px;
   border-radius: 5px;
 }
 .portfolio__item__wrap{
-  margin-left: 20px;
+  margin-left: 5px;
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 20px;
   transition: all linear 0.3s;
 }
 .portfolio__item{
-  width: 340px;
+  width: 360px;
   background: linear-gradient(#7333c1,#9384a4);
   text-align: center;
   padding: 20px 8px 10px 8px;
   border-radius: 5px;
 }
 .portfolio__item__img{
-  width: 310px;
-  height: 270px;
+  width: 340px;
+  height: 280px;
   object-fit: cover;   
   text-align: center;
   object-position:50% 50%;
@@ -414,14 +420,14 @@ button.nav-link{
   gap: 20px;
 }
 .blog__item{
-  width: 350px;
+  width: 360px;
   padding: 10px;
   background:#52485c;
   text-align: center;
 }
 .blog__img{
-  width: 320px;
-  height: 228px;
+  width: 340px;
+  height: 250px;
 }
 .blog__img img{
   max-width: 100%;
