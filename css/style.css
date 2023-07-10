@@ -311,11 +311,11 @@ button.nav-link{
   margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 20px;
 }
 .service__item{
-  width: 360px;
-  padding: 30px;
+  width: 345px;
+  padding: 20px;
 }
 .service__item:hover{
   background:linear-gradient( #be24a9,#5d3a6e);
@@ -374,14 +374,14 @@ button.nav-link{
   transition: all linear 0.3s;
 }
 .portfolio__item{
-  width: 360px;
+  width: 345px;
   background: linear-gradient(#7333c1,#9384a4);
   text-align: center;
-  padding: 20px 8px 10px 8px;
+  padding: 10px 8px 20px 8px;
   border-radius: 5px;
 }
 .portfolio__item__img{
-  width: 340px;
+  width: 330px;
   height: 280px;
   object-fit: cover;   
   text-align: center;
