@@ -27,7 +27,7 @@ h1,h2,h3,h4,h5,h6,p{
   color: #f4ec55;
   text-transform: capitalize;
 }
-.common__head__bot{
+.common__head__bottom{
   font-size: 36px;
   line-height: 40px;
   font-weight: 700;
@@ -35,14 +35,27 @@ h1,h2,h3,h4,h5,h6,p{
   color: #f1f1f1;
   text-transform: capitalize;
 }
+
 /* body{
   overflow: hidden;
 } */
+/* =============NAVBAR+BANNER  STARTS HERE==================== */
+#nav_ban{
+  background: linear-gradient(rgba(19, 22, 67, 0.635),rgba(19, 22, 67, 0.635)), url(../images/pexels-anni-roenkae-3418396.jpg) no-repeat center/cover;
+}
+.nav__banner{
+  display: flex;
+
+}
+
+/* =============NAVBAR+BANNER ENDS HERE==================== */
 /* =============NAVBAR STARTS HERE==================== */
 
 .navbar{
   background-color: #161946 !important;
   list-style-type: none;
+  top: 0;
+  left: 0;
   margin: 0;
   padding: 0;
   width: 13%;
@@ -54,7 +67,8 @@ h1,h2,h3,h4,h5,h6,p{
 .side__nav{
   display: flex;
   flex-direction: column;
-  margin-left: 20px;
+  padding-left: 20px;
+  margin: 0 auto;
 }
 .navbar-nav{
   margin-top: 20px;
@@ -76,13 +90,14 @@ h1,h2,h3,h4,h5,h6,p{
  /* ==============NAVBAR EndS HERE==================== */
 /* =============BANNER STARTS HERE==================== */
 #banner{
-  background: linear-gradient(rgba(19, 22, 67, 0.635),rgba(19, 22, 67, 0.635)), url(../images/pexels-anni-roenkae-3418396.jpg) no-repeat center/cover;
-  margin-left: 13%;
-  padding: 80px 0;
+
+  padding: 80px 20px 80px 120px;
+  margin: 0 auto;
+
 }
-.banner__left{
+/* .banner__left{
   margin-left: 25px;
-}
+} */
 .banner__head{
   padding-top: 100px;
   font-family: 'PT Serif', serif;
@@ -93,7 +108,7 @@ h1,h2,h3,h4,h5,h6,p{
   color: #ffffff;
 }
 .banner__right{
-  margin-left: 100px;
+  margin-left: 120px;
 }
 .banner__img{
   width: 350px;
@@ -159,8 +174,9 @@ h1,h2,h3,h4,h5,h6,p{
   font-size: 20px;
   color: #f4ec55;
 }
- /* ==============BANNER EndS HERE==================== */
-/* =============About Me STARTS HERE==================== */
+ /* ==============BANNER EndS HERE================== */
+ 
+/* =============About Me STARTS HERE================ */
 #about{
   background: linear-gradient(rgba(10, 12, 39, 0.938),#5d3a6e);
   padding: 80px 0;
@@ -420,13 +436,13 @@ button.nav-link{
   gap: 20px;
 }
 .blog__item{
-  width: 360px;
+  width: 345px;
   padding: 10px;
   background:#52485c;
   text-align: center;
 }
 .blog__img{
-  width: 340px;
+  width: 330px;
   height: 250px;
 }
 .blog__img img{
