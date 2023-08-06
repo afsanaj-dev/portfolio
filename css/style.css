@@ -1,3 +1,33 @@
+/* ===========Root Variable Starts======== */
+:root{
+  /* ----------color----------- */
+
+  --white: #f1f1f1;
+  --head-white:#ffffff;
+  --yellow: #f4ec55;
+  --yellow-dark: yellow;
+  --pink: #be24a9;
+  --blue:#3d54c8;
+  --sky-blue:#6ed1fb;
+  --ash:#52485c;
+  --nav-bg: #161946;
+  --bg-linear1:rgba(19, 22, 67, 0.635);
+  --bg-linear2:rgba(10, 12, 39, 0.938);
+  --bg-linear3: #5d3a6e;
+  --bg-linear4:rgba(19, 22, 67, 0.938);
+  --head-color1:#b0aff5;
+  --black:#020202;
+  --light-sky:#acd2eb;
+
+  /* ----------font------------- */
+  --pt-sarif: 'PT Serif', serif;
+  --abril-fatface:'Abril Fatface', cursive;
+  --euphoria:'Euphoria Script', cursive;
+}
+
+
+/* ===========Root Variable Ends======== */
+/* ========Common CSS Starts=========== */
 *{
   margin: 0;
   padding: 0;
@@ -23,25 +53,25 @@ h1,h2,h3,h4,h5,h6,p{
   line-height: 16px;
   letter-spacing: 4px;
   font-weight: 400;
-  font-family: 'Euphoria Script', cursive;
-  color: #f4ec55;
+  font-family: var(--euphoria);
+  color: var(--yellow);
   text-transform: capitalize;
 }
 .common__head__bottom{
   font-size: 36px;
   line-height: 40px;
   font-weight: 700;
-  font-family: 'Abril Fatface', cursive;
-  color: #f1f1f1;
+  font-family: var(--abril-fatface);
+  color: var(--white);
   text-transform: capitalize;
 }
-
+/* ========Common CSS Ends=========== */
 /* body{
   overflow: hidden;
 } */
 /* =============NAVBAR+BANNER  STARTS HERE==================== */
 #nav_ban{
-  background: linear-gradient(rgba(19, 22, 67, 0.635),rgba(19, 22, 67, 0.635)), url(../images/pexels-anni-roenkae-3418396.jpg) no-repeat center/cover;
+  background: linear-gradient(var(--bg-linear1),var(--bg-linear1)), url(../images/pexels-anni-roenkae-3418396.jpg) no-repeat center/cover;
 }
 .nav__banner{
   display: flex;
@@ -51,27 +81,20 @@ h1,h2,h3,h4,h5,h6,p{
 /* =============NAVBAR+BANNER ENDS HERE==================== */
 /* =============NAVBAR STARTS HERE==================== */
 
-.navbar{
-  background-color: #161946 !important;
+.side__nav{
+  background-color: var(--nav-bg);
   list-style-type: none;
+  margin: 0 auto;
+  padding: 20px 10px;
   top: 0;
   left: 0;
-  margin: 0;
-  padding: 0;
-  width: 13%;
-  background-color: #f1f1f1;
+  width: 11%;
   height: 100%; /* Full height */
-  position: fixed; /* Make it stick, even on scroll */
-  /* overflow: auto; Enable scrolling if the sidenav has too much content */
-}
-.side__nav{
+  position: fixed;
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
-  margin: 0 auto;
-}
-.navbar-nav{
-  margin-top: 20px;
+  align-items: center;
+  justify-content: center;  
 }
 .nav-item{
   border-top: 1px solid #55588d;
@@ -82,30 +105,26 @@ h1,h2,h3,h4,h5,h6,p{
   padding: 10px 0;
 }
 .nav-item a{
-  color: #f1f1f1 !important;
+  color: var(--white) !important;
 }
 .nav-item a:hover{
-  color: #f4ec55 !important;
+  color: var(--yellow) !important;
 }
  /* ==============NAVBAR EndS HERE==================== */
 /* =============BANNER STARTS HERE==================== */
 #banner{
-
   padding: 80px 20px 80px 120px;
   margin: 0 auto;
-
 }
-/* .banner__left{
-  margin-left: 25px;
-} */
+
 .banner__head{
   padding-top: 100px;
-  font-family: 'PT Serif', serif;
+  font-family: var(--pt-sarif);
   font-size: 50px;
   font-weight: 400;
   line-height: 40px;
   text-transform: capitalize;
-  color: #ffffff;
+  color: var(--head-white);
 }
 .banner__right{
   margin-left: 120px;
@@ -132,18 +151,18 @@ h1,h2,h3,h4,h5,h6,p{
   left: 0px;
   top: 45px;
   text-align: center;
-  font-family: 'PT Serif', serif;
+  font-family: var(--pt-sarif);
   font-size: 32px;
-  color: #f1f1f1;
+  color: var(--white);
 }
 .text {
   position: absolute;
   bottom: -100px; /* Hide the text initially */
   width: 70%;
   text-align: center;
-  font-family: 'Euphoria Script', cursive;
+  font-family: var(--euphoria);
   font-size: 40px;
-  color: #f4ec55;
+  color: var(--yellow);
   transform-origin: bottom;
   transition: transform 0.5s;
 }
@@ -172,15 +191,15 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .social__link{
   font-size: 20px;
-  color: #f4ec55;
+  color: var(--yellow);
 }
  /* ==============BANNER EndS HERE================== */
  
 /* =============About Me STARTS HERE================ */
 #about{
-  background: linear-gradient(rgba(10, 12, 39, 0.938),#5d3a6e);
+  background: linear-gradient(var(--bg-linear2),var(--bg-linear3));
   padding: 80px 0;
-  margin-left: 13%;
+  margin-left: 11%;
 }
 .about__right{
   margin: 150px 20px 0 30px;
@@ -189,8 +208,8 @@ h1,h2,h3,h4,h5,h6,p{
   font-size: 20px;
   line-height: 16px;
   font-weight: 400;
-  font-family: 'PT Serif', serif;
-  color: #b0aff5;
+  font-family: var(--pt-sarif);
+  color: var(--head-color1);
   text-transform: capitalize;
   padding-bottom: 30px;
 }
@@ -198,7 +217,7 @@ h1,h2,h3,h4,h5,h6,p{
   font-size: 16px;
   line-height: 30px;
   font-weight: 400;
-  font-family: 'PT Serif', serif;
+  font-family: var(--pt-sarif);
   color: #9b9af1;
 }
 .tab-item{
@@ -206,13 +225,13 @@ h1,h2,h3,h4,h5,h6,p{
 }
 button.nav-link{
   padding: 10px 30px !important;
-  color: #f1f1f1 !important;
+  color: var(--white) !important;
   font-size: 20px;
   font-weight: 400;
-  font-family: 'PT Serif', serif;
+  font-family: var(--pt-sarif);
 }
 .tab-link.active{
-  background-color: #be24a9 !important;
+  background-color: var(--pink) !important;
 }
 .about__table{
   display: flex;
@@ -220,37 +239,37 @@ button.nav-link{
 }
 .table__title{
   font-size: 18px;
-  font-family: 'PT Serif', serif;
-  color: #f1f1f1;
+  font-family: var(--pt-sarif);
+  color: var(--white);
 }
 .table__p{
   font-size: 16px;
-  font-family: 'PT Serif', serif; 
-  color: #b0aff5;
+  font-family: var(--pt-sarif); 
+  color: var(--head-color1);
   text-align: end;
 }
 .job__head{
   margin-top: 30px;
   font-size: 18px;
   font-weight: 400;
-  font-family: 'PT Serif', serif;
-  color: #f1f1f1;
+  font-family: var(--pt-sarif);
+  color: var(--white);
 }
 .job__place{
   margin: 30px 0;
   font-size: 16px;
   font-weight: 400;
-  font-family: 'PT Serif', serif;
-  color: #b0aff5;
+  font-family: var(--pt-sarif);
+  color: var(--head-color1);
 }
 .job__year{
   margin-bottom: 20px;
   font-size: 14px;
   font-weight: 400;
-  font-family: 'PT Serif', serif;
-  color: #f1f1f1;
+  font-family: var(--pt-sarif);
+  color: var(--white);
   padding: 10px;
-  background-color: #be24a9;
+  background-color: var(--pink);
   border-radius: 10px;
 }
 .job__p{
@@ -258,8 +277,8 @@ button.nav-link{
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
-  font-family: 'PT Serif', serif;
-  color: #f1f1f1;
+  font-family: var(--pt-sarif);
+  color: var(--white);
 }
 .education__item__wrap{
   display: flex;
@@ -267,7 +286,7 @@ button.nav-link{
   flex-wrap: wrap;
 }
 .education__item{
-  border: 1px solid #be24a9;
+  border: 1px solid var(--pink);
   width: 500px;
   padding: 0 20px;
 }
@@ -284,8 +303,9 @@ button.nav-link{
 }
 .progress__h{
   font-size: 20px;
-  color: #ffffff;
-  
+  color: var(--head-white); 
+  margin-top: 30px;
+  margin-bottom: -5rem;
 }
 
 #progress-
@@ -296,7 +316,7 @@ button.nav-link{
 
 .progress {
   fill: transparent;
-  stroke: #3e58da;
+  stroke: #3d54c8;
   stroke-width: 10;
   stroke-dasharray: 283;
   stroke-dashoffset: 283;
@@ -312,16 +332,15 @@ button.nav-link{
   transform: translate(-50%, -50%);
   font-size: 20px;
   font-weight: bold;
-  color: #fff;
+  color: var(--head-white);
 }
-
 
  /* ==============About Me EndS HERE==================== */
 /* =============SERVICE STARTS HERE==================== */
 #service{
-  background: linear-gradient(#5d3a6e,rgba(19, 22, 67, 0.938));
-  padding: 80px 0;
-  margin-left: 13%;
+  background: linear-gradient(var(--bg-linear3),var(--bg-linear4));
+  padding: 80px 20px;
+  margin-left: 11%;
 } 
 .service__wrap{
   margin-top: 40px;
@@ -334,34 +353,34 @@ button.nav-link{
   padding: 20px;
 }
 .service__item:hover{
-  background:linear-gradient( #be24a9,#5d3a6e);
+  background:linear-gradient( var(--pink),var(--bg-linear3));
 }
 .service__icon{
   font-size: 40px;
-  color: #f4ec55;
+  color: var(--yellow);
 }
 .service__title{
   text-transform: capitalize;
   margin: 35px 0;
   font-size: 24px;
   font-weight: 600;
-  font-family: 'PT Serif', serif;
-  color: #f1f1f1;
+  font-family: var(--pt-sarif);
+  color: var(--white);
 }
 .service__p{
   font-size: 16px;
   line-height: 27px;
   font-weight: 400;
-  font-family: 'PT Serif', serif;
+  font-family: var(--pt-sarif);
   color: #c4c4c4;
   
 }
 /* ==============SERVICE EndS HERE==================== */
 /* =============Portfolio STARTS HERE==================== */
 #portfolio{
-  background: linear-gradient(rgba(19, 22, 67, 0.938),#5d3a6e);
-  padding: 80px 0;
-  margin-left: 13%;
+  background: linear-gradient(var(--bg-linear4),var(--bg-linear3));
+  padding: 80px 15px;
+  margin-left: 11%;
 } 
 .portfolio__menu{
   margin: 30px 5px;
@@ -410,7 +429,7 @@ button.nav-link{
 }
 .portfolio__item__head{
   margin-top: 10px;
-  font-family: 'PT Serif', serif;
+  font-family: var(--pt-sarif);
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
@@ -418,17 +437,17 @@ button.nav-link{
 }
 .portfolio__link{
   font-size: 16px;
-  font-family: 'PT Serif', serif; 
+  font-family: var(--pt-sarif); 
  font-weight: 400;
- color: #f4ec55;
+ color: var(--yellow);
  
 }
  /* ==============Portfolio EndS HERE==================== */
  /* =============Blog STARTS HERE==================== */
 #blog{
-   background: linear-gradient(#5d3a6e,rgba(19, 22, 67, 0.938));
-  padding: 80px 0;
-  margin-left: 13%;
+   background: linear-gradient(var(--bg-linear3),var(--bg-linear4));
+  padding: 80px 18px;
+  margin-left: 11%;
 }
 .blog__wrap{
   margin-top: 40px;
@@ -438,7 +457,7 @@ button.nav-link{
 .blog__item{
   width: 345px;
   padding: 10px;
-  background:#52485c;
+  background:var(--ash);
   text-align: center;
 }
 .blog__img{
@@ -455,54 +474,54 @@ button.nav-link{
   justify-content: space-between;
 }
 .blog__date{
-  font-family: 'PT Serif', serif;
+  font-family: var(--pt-sarif);
   font-weight: 400;
   font-size: 14px;
   color: #dad774fe;
 }
 .blog__link{
-  font-family: 'PT Serif', serif;
+  font-family: var(--pt-sarif);
   font-weight: 400;
   font-size: 14px;
   color: #dad774fe;
 }
 .blog__head{
-  font-family: 'PT Serif', serif;
+  font-family: var(--pt-sarif);
   font-weight: 600;
   font-size: 20px;
   line-height: 25px;
-  color: #b0aff5;
+  color: var(--head-color1);
 }
 .blog__p{
-  font-family: 'PT Serif', serif;
+  font-family: var(--pt-sarif);
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
-  color: #fff;
+  color: var(--head-white);
 }
  /* ==============Blog EndS HERE==================== */
 /* =============Contact STARTS HERE==================== */
 #contact{
-  background: linear-gradient(rgba(19, 22, 67, 0.938),#5d3a6e);
+  background: linear-gradient(var(--bg-linear4),var(--bg-linear3));
   padding: 80px 0;
-  margin-left: 13%;
+  margin-left: 10%;
 } 
 .connect{
   margin: 50px 0 0 50px;
 }
 .connect__head{
-  font-family: 'PT Serif', serif;
+  font-family: var(--pt-sarif);
   font-weight: 400;
   font-size: 26px;
-  color: #b0aff5;
+  color: var(--head-color1);
 }
 .connect__p,.connect__p1{
   margin: 40px 0;
-  font-family: 'PT Serif', serif;
+  font-family: var(--pt-sarif);
   font-weight: 400;
   font-size: 16px;
   line-height: 27px;
-  color: #ffffff;
+  color: var(--head-white);
 }
 .connect__p1{
   margin: 0 0 10px 0;
@@ -523,29 +542,195 @@ button.nav-link{
 
 .connect__form{
   width: 300px;
-  margin: 50px 0 0 50px;
+  margin: 50px 0 0 150px;
   display: flex;
   flex-direction: column;
-  row-gap: 10px;
+  row-gap: 15px;
 }
 
 .connect__form button{
-
   margin-top: 30px;
   padding: 5px;
   border-radius: 5px;
-  background:#b0aff5;
+  background:var(--head-color1);
 }
  /* ==============Contact EndS HERE==================== */
 
-/* =============NAVBAR STARTS HERE==================== */
- /* ==============NAVBAR EndS HERE==================== */
-/* =============NAVBAR STARTS HERE==================== */
- /* ==============NAVBAR EndS HERE==================== */
+/* =============Color Switcher STARTS HERE=========== */
+.color_switch ul{
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  gap: 10px;
+}
+.color_switch ul li{
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: var(--ash);
+  list-style-type: none;
+  color: var(--head-white);
+}
+.light .color_switch ul li {
+  background-color: var(--sky-blue);
+  color: var(--yellow);
+}
+#dark i{
+  padding-top: 3px;
+  color: var(--black);
+  font-size: 20px;
+}
+.light .common__head__bottom {
+  color: var(--ash);
+}
+.light .common__head__top {
+  color: var(--blue);
+}
+/* ---------Nav Light------- */
+.light .side__nav{
+  background-color: var(--head-white);
+}
+.light .nav-item a {
+  color: var(--black) !important;
+}
+/* ----------Banner Light--------- */
+.light #nav_ban{
+  background:  url(../images/banner-light.jpg) no-repeat center/cover;
+}
+.light .banner__head {
+  color: var(--blue);
+}
+.light .creative{
+  color: var(--blue);
+}
+.light .text{
+  color: var(--black);
+}
+.light .social__link {
+  color: var(--blue);
+}
+/* ----------About me Light------- */
+.light #about {
+  background: linear-gradient(var(--head-white),var(--light-sky));
+}
+.light .about__head {
+  color: var(--blue);
+}
+.light .about__p {
+  color: var(--ash);
+}
+.light .tab-link.active {
+  background-color: var(--sky-blue) !important;
+}
+.light button.nav-link {
+  color: var(--black) !important;
+}
+.light .table__title {
+  color: var(--black);
+}
+.light .nav-tabs .nav-link {
+  border: var(--ash) solid transparent;
+}
+.light tbody, td, tfoot, th, thead, tr {
+  border-color: var(--ash);
+}
+.light .table__p {
+  color: var(--ash);
+}
+.light .job__head {
+  color: var(--black);
+}
+.light .job__place {
+  color: var(--ash);
+}
+.light .job__p {
+  color: var(--ash);
+}
+.light .job__year {
+  color: var(--black);
+  background-color: var(--sky-blue);
+}
+.light.progress {
+  stroke: var(--sky-blue);
+}
+.light .education__item {
+  border: 1px solid var(--ash);
+}
+.light .progress-bar {
+  color: var(--black);
+}
+.light .progress {
+  stroke: var(--blue);
+}
+.light .progress__h {
+  color: var(--ash);
+}
+.light .progress-text {
+  color: var(--ash);
+}
+/* ----------Service Light----------- */
+.light #service {
+  background: linear-gradient(var(--light-sky),var(--head-white));
+}
+.light .service__icon {
+  font-size: 40px;
+  color: var(--yellow-dark);
+}
+.light .service__title {
+  color: var(--blue);
+}
+.light .service__p {
+  color: var(--ash);
+}
+.light .service__item:hover{
+  background:var(--sky-blue);
+}
+/* -----------portfolio Light---------- */
+.light #portfolio {
+  background: linear-gradient(var(--head-white),var(--light-sky));
+}
+.light .portfolio__btn {
+  color: var(--black);
+  background: var(--sky-blue);
+}
+.light .portfolio__item {
+  background: linear-gradient(var(--light-sky),var(--sky-blue));
+}
+.light .portfolio__item__head {
+  color: var(--black);
+}
+.light .portfolio__link {
+  color: var(--yellow-dark);
+}
+/* ---------Blog Light---------- */
+.light #blog {
+  background: linear-gradient(var(--light-sky),var(--head-white));
+}
+.light .blog__item {
+  background: linear-gradient(var(--sky-blue),var(--ash));
+}
+/* -----------Contact Light--------- */
+.light #contact {
+  background: linear-gradient(var(--head-white),var(--light-sky));
+}
+.light .connect__head {
+  color: var(--black);
+}
+.light .connect__p,.light .connect__p1 {
+  color: var(--ash);
+}
+.light .connect__form button {
+  background: var(--ash);
+  color: var(--head-white);
+}
+ /* ==============Color Switcher EndS HERE==========  */
 
 
-/* font-family: 'Abril Fatface', cursive;
-font-family: 'Euphoria Script', cursive;
+/* font-family: var(--abril-fatface);
+font-family: var(--euphoria);
 font-family: 'Fira Sans', sans-serif;
-font-family: 'PT Serif', serif; 
+font-family: var(--pt-sarif); 
 #807eef */

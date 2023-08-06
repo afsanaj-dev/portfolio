@@ -90,3 +90,16 @@ function updateProgress(progress, progressBar) {
   var progressBar3 = document.querySelector('#progress-3 .progress');
   updateProgress(progress3, progressBar3);
   
+//   ===============Color Switcher===========
+$(function(){
+    $('#dark').click(dark);
+    $('#light').click(light);
+
+    function dark() {
+    $('body').attr('class', 'dark');
+    }
+
+    function light() {
+    $('body').attr('class', 'light');
+    }
+})
