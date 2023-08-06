@@ -339,7 +339,7 @@ button.nav-link{
 /* =============SERVICE STARTS HERE==================== */
 #service{
   background: linear-gradient(var(--bg-linear3),var(--bg-linear4));
-  padding: 80px 20px;
+  padding: 80px 0 80px 20px;
   margin-left: 11%;
 } 
 .service__wrap{
@@ -379,7 +379,7 @@ button.nav-link{
 /* =============Portfolio STARTS HERE==================== */
 #portfolio{
   background: linear-gradient(var(--bg-linear4),var(--bg-linear3));
-  padding: 80px 15px;
+  padding: 80px 0 80px 15px;
   margin-left: 11%;
 } 
 .portfolio__menu{
