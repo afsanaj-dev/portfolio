@@ -570,6 +570,7 @@ button.nav-link{
   background-color: var(--ash);
   list-style-type: none;
   color: var(--head-white);
+  cursor: pointer;
 }
 .light .color_switch ul li {
   background-color: var(--sky-blue);
